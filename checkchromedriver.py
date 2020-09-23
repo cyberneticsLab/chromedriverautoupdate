@@ -57,7 +57,7 @@ paths = [r"C:\Program Files\Google\Chrome\Application\chrome.exe",
         r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"]      
 
 ### checks version number of Chrome application, needed for chromedriver application search
-version = str(list(filter(None, [get_version_via_com(p) for p in paths]))[0])[:2]
+version = str(list(filter(None, [get_version_via_com(p) for p in paths]))[0])[:2] #modified from https://stackoverflow.com/questions/57441421/how-can-i-get-chrome-browser-version-running-now-with-python
 
 # Attempt #
 
